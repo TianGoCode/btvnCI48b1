@@ -1,0 +1,84 @@
+#toppage{
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    width: 25%;
+    text-align: center;
+    height: auto;
+    color: white;
+    line-height: 25px;
+    background: #ccc;
+    border-left: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.header:hover {
+    background: #9b9b9b;
+    cursor: pointer;
+}
+#header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#img1 {
+    margin-bottom: 50px;
+}
+#img1:hover #title1 {
+    display: block;
+}
+#title1 {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+    color: white;
+    border: 0.5px solid #ffffff;
+    padding: 100px 70px;
+    border-radius: 50%;
+    left: 75%;
+    top: 50%;
+    font-family: "Lobster", cursive;
+}
+#botdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 50px;
+}
+.imgbot {
+    width: 30%;
+    height: auto;
+    color: #9b9b9b;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.imgbot > img {
+    height: 60%;
+    margin-bottom: 20px;
+}
+.bottitle{
+    position: absolute;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    display:none;
+    line-height: 25px;
+}
+.imgbot:hover .bottitle{
+    display: block;
+}
+#footer{
+    
+    padding: 0 30px;
+    height: auto;
+    color: white;
+    line-height: 50px;
+    background: #9b9b9b;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
