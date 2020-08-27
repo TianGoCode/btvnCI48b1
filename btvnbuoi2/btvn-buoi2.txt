@@ -1,0 +1,5 @@
+lần này có dấu nhé thầy!
+tính chất của oop:
+- abstraction - tính trừu tượng : coi đối tượng có một số các tính chất, hoạt động chung nhất định nào đó thành 1 lớp chung để về sau có thể tạo ra nhiều các dối tượng dựa trên lớp đó. Dựa vào mỗi góc nhìn mà 1 lớp có thể có các tính chất, hoat động khác nhau
+- encapsulation - đóng gói : thì, đóng gói các thuộc tính phương thức vào bên trong, chỉ thể hiện bên ngoài, có thể che dấu được bên trong và việc sử dụng không ảnh hưởng đến chúng
+- polymorphism - đa hình : 1 hàm/phương thức có thể trùng tên với hàm /pt khác trong 1 lớp
