@@ -7,15 +7,17 @@ class tourHN1 extends HTMLElement {
         this._shadowRoot.innerHTML = `
         <div id="name"></div>
         <div id="age"></div>
-        <img src="" alt="">
+        <div id="address"></div>
         <div id="date-modified">${new Date().toLocaleString()}</div>
+        <img src="" alt="">
         `;
         this.$name = this._shadowRoot.querySelector("#name");
         this.$age = this._shadowRoot.querySelector("#age");
         this.$img = this._shadowRoot.querySelector("img");
+        this.$address = this._shadowRoot.querySelector("#address");
     }
     static get observedAttributes() {
-        return ['name', "age", "img", "description"];
+        return ['name', "age",  "address", "img"];
     }
     attributeChangedCallback(name, oldval, newval) {
         if( name === 'name'){
@@ -26,6 +28,8 @@ class tourHN1 extends HTMLElement {
         }
         else if(name === 'age'){
             this.$age.innerHTML = (newval);
+        }  else if(name === 'address'){
+            this.$address.innerHTML = (newval);
         }
     }
 }
