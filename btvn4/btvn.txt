@@ -1,0 +1,14 @@
+// created by VuHoangTuan at 20200902 20:45. //
+//                                           //
+// Made by VHT, git: TianGocode              //
+
+
+
+
+Synchronous và Asynchronous :
+- một chương trình đơn giản, ví dụ ct tính nghiệm pt bậc 2, gồm các dòng code và thực hiện theo thứ tự từ trên xuống dưới, khi đó ta gọi là đồng bộ, các câu lệnh chạy tuần tự từ trên xuống, mỗi thời điểm chỉ có 1 lệnh chạy
+- tuy nhiên một số chương trình, ví dụ như trong một đoạn code có lệnh tải 1 tệp lên, tuy nhiên thời gian lại khá lâu do tệp nặng, các code ở dưới cần được triển khai, khi đó ta có cơ chế bất đồng bộ, cho phép thực hiện các câu lệnh ở dưới ngay cả khi như trong ví dụ trên vẫn đang tải tệp lên mà chạy tiếp các câu lệnh ở dưới. Liên quan đén cơ chế này là việc xử lí bất đồng bộ trong javascript.
+- một số phương pháp trong js : callback, promise và sync/await
+
+
+- ơ mà, chạy được với LiveServer nhưng mở bình thường lại tạch là sao nhỉ, xin chỉ giáo problem này với thầy ơi :D
