@@ -11,4 +11,4 @@ Synchronous và Asynchronous :
 - một số phương pháp trong js : callback, promise và sync/await
 
 
-- ơ mà, chạy được với LiveServer nhưng mở bình thường lại tạch là sao nhỉ, xin chỉ giáo problem này với thầy ơi :D
+
