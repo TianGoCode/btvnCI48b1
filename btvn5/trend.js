@@ -1,56 +1,39 @@
-
-
-    // created by VuHoangTuan at 20200902 20:45. //
-    //                    ↓                       //
-    // Made by VHT, git: TianGocode              //
-
-// file này tạo ra vs mong muốn đú trend và kiếm tiền <(")
-// cho 1 string bat ky`, khong dau
-let str = "pham thanh huyen"
-//tim 2 khoang trong dau cuoi
-let space = []
-space[0]= str.indexOf(" ")
-space[1] = str.lastIndexOf(" ")
+// created by VuHoangTuan at 20200902 20:45. //
+//                    ↓                       //
+// Made by VHT, git: TianGocode              //
 
 
 
-//mang chua nguyen am de loc tu :v
-let nguyenAm = ['u', 'e', 'o', 'a', 'i']
-//khoi tao mang chua tu dau va tu cuoi
 
-let start = []
-for (let i = 0; i < space[0]; i++) {
-    start.push(str[i])
-}
-//loc
-let index = 0
- for(let i = 0; i<start.length;i++){
-    for(let j = 0; j<nguyenAm.length;j++){
-        if(start[i]===nguyenAm[j]){
-            index = i
+let nguyenAm = ['u', 'ú', 'ù', 'ũ', 'ủ', 'e', 'é', 'è', 'ẽ', 'ẻ', 'ê', 'ế', 'ễ', 'ề', 'ể', 'o', 'ó', 'ò', 'õ', 'ỏ', 'ô', 'ố', 'ồ', 'ỗ', 'ổ', 'ơ', 'ớ', 'ờ', 'ỡ', 'ở', 'a', 'á', 'à', 'ã', 'ả', 'â', 'ấ', 'ầ', 'ẫ', 'ẩ', 'ă', 'ắ', 'ằ', 'ẵ', 'ẳ', 'i', 'í', 'ì', 'ĩ', 'ỉ', 'ư', 'ứ', 'ừ', 'ữ', 'ử', 'ạ', 'ậ', 'ặ', 'ẹ', 'ệ', 'ọ', 'ộ', 'ợ', 'ụ', 'ự', 'ị', 'y', 'ý', 'ỳ', 'ỹ', 'ỵ', 'ỷ']
+
+function funny() {
+    let input = document.getElementById("str-in").value
+    input = input.trim().toLowerCase()
+   
+    let start = []
+    for (let i = 0; i < input.indexOf(" "); i++) {
+        if (!nguyenAm.includes(input[i])) {
+            start.push(input[i])
+        } else {
             break
         }
-      
     }
-}
-start.splice(index,start.length-index)
-console.log(index);
-
-let end = []
-for (let i = str.length - 1; i > space[1]; i--) {
-    end.push(str[i])  
-}
-//loc
-end.reverse()
-
-for(let i = 0; i<end.length;i++){
-    for(let j = 0; j<nguyenAm.length;j++){
-        if(end[i]===nguyenAm[j])
-        index = i
-        break
+    let index = 0;
+    let end = []
+    for (let i = input.length - 1; i > input.lastIndexOf(" "); i--) {
+        if (nguyenAm.includes(input[i])) {
+            index = i
+        }
     }
+    for (let i = index; i < input.length; i++) {
+        start.push(input[i])
+    }
+
+    let output = document.getElementById("str-out")
+
+
+    output.value = input.charAt(0).toUpperCase() + start.join("").slice(1)
 }
-end.splice(0,index)
-console.log(str);
-console.log((start.concat(end)).join(''))
-//phần này tôi lười thêm trường hợp có dâu quá :(((((, góp vui tí xem thầy vs cô có thêm cách nào ngắn không thôi chứ cái này thấy cồng kềnh thật :))
+
+funny("nguyễn thị kim oanh")
