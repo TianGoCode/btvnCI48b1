@@ -1,5 +1,0 @@
-- arrow function có thể coi là 1 cách viết rút gọn của function: có return, và truyền tham số
-() => {}
-tuy nhiên, vẫn cần phân biệt arrow function với function thông thường, đặc biệt với từ khóa "this"
-this trong function thông thường là chỉ thứ mà gọi nó ra
-this trong arrow function để chỉ thứ sở hữu cả hàm đó và thứ gọi ra nó
