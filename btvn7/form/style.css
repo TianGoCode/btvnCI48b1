@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#formcs {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background: #b082ec;
+    width: 40%;
+}
+#headf {
+    background: #774ee7;
+    width: 100%;
+    font-size: 35px;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+}
+form {
+    padding: 20px 40px;
+    width: 100%;
+}
+form label {
+    margin-left: 10px;
+}
+form button {
+    background-color: #4ea171 !important;
+    padding: 5px;
+    color: white !important;
+}
+.form-check-label {
+    color: #ffffff;
+}
+
+li[class="nav-item"] {
+    width: 50%;
+}
+li[class="nav-item"] > a{
+    color: #ffffff;
+}
+.form-check-label{
+    font-size: 20px;
+}
+.form-check-input{
+    height: 100%;
+}
