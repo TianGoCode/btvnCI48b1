@@ -1,0 +1,18 @@
+.meme {
+    border: 5px dashed green;
+    width: 400px;
+    margin: 10px 10px;
+}
+.meme > div {
+    border-bottom: 5px dashed green;
+    padding: 5px;
+    word-wrap: break-word;
+    font-family: "Sriracha", cursive;
+    font-size: 13pt;
+}
+img {
+    width: 100%;
+}
+#date-modified {
+    border: none;
+}
