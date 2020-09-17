@@ -15,5 +15,26 @@
 
 
     <script src="./js/screens/index.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCwNvtGgXK8kwHGZCxiTSaXkSXXVBmdTIY",
+            authDomain: "ci-js-48.firebaseapp.com",
+            databaseURL: "https://ci-js-48.firebaseio.com",
+            projectId: "ci-js-48",
+            storageBucket: "ci-js-48.appspot.com",
+            messagingSenderId: "443659819753",
+            appId: "1:443659819753:web:cf7fdbba05e1bfc872ae78"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
